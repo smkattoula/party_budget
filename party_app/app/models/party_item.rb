@@ -1,0 +1,2 @@
+class PartyItem < ApplicationRecord
+end

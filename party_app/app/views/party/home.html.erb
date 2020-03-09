@@ -1,0 +1,28 @@
+<h1>PARTY LIST GENERATOR</h1>
+<h4>Instructions: Input Budget and Attendance in HTTP to return budget and tier for party (/budget/:spending/:attendance)</h4>
+
+    <% @items.each do |item| %>
+        <ul>
+            <li>
+                    <h1><%= item.category %></h1>
+                    <p>
+                            Tier:<%= item.tier %>
+                    </p>
+                    <p>
+                            Items:<%= item.items_name %>
+                    </p>
+                    <p>
+                            Count:<%= item.item_count %>
+                    </p>
+                    <p>
+                            Cost:<%= item.price %>
+                    </p>
+            </li>
+        </ul>
+        <% end %>
+<h2>Tier 1 Package: $135 per person. Includes 5 items per person.</h2>
+<h3>Items include: Food and Beverages.</h3>
+<h2>Tier 2 Package: $310 per person. Includes 11 items per person.</h2>
+<h3>Items include: Food, Beverages, Entertainment and Staff.</h3>
+<h2>Tier 3 Package: $500 per person. Includes 12 items per person.</h2>
+<h3>Items include: Food, Beverages, Entertainment, Staff and Swag Bag B-).</h3>
